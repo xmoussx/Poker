@@ -43,23 +43,15 @@
       color: #888;
     }
   </style>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17292830297">
-    </script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'AW-17292830297');
-    </script>
-    <script>
-      document.getElementById('form-click').addEventListener('click', function () {
-        gtag('event', 'conversion', {
-          'send_to': 'AW-1729283029/GQG0CLXqtucaENnM7zvA'
-        });
-      });
-    </script>
+  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17292830297"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17292830297');
+  </script>
 </head>
 <body>
   <h1>♣️ Competitive Strategy Game</h1>
@@ -67,14 +59,24 @@
     We're working on a new type of online game — skill-based, competitive, and free from gambling.<br/>
     Help us design the best experience by answering this short survey. It only takes 2 minutes.
   </p>
-<a href="https://docs.google.com/forms/d/e/1FAIpQLScq9sCopmjkNFTOrapV4GNxYR4rySEu-0OANn0O8nOmbc8XqQ/viewform?usp=dialog" 
-   target="_blank" 
-   id="form-click">
-  Take the survey
-</a>
+
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLScq9sCopmjkNFTOrapV4GNxYR4rySEu-0OANn0O8nOmbc8XqQ/viewform?usp=dialog" 
+     target="_blank" 
+     id="form-click">
+    Take the survey
+  </a>
 
   <footer>
     Your answers are anonymous and will only be used to shape the future of this project.
   </footer>
+
+  <!-- Script pour suivre le clic -->
+  <script>
+    document.getElementById('form-click').addEventListener('click', function () {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-1729283029/GQG0CLXqtucaENnM7zvA'
+      });
+    });
+  </script>
 </body>
 </html>

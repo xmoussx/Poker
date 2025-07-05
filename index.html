@@ -70,13 +70,15 @@
     Your answers are anonymous and will only be used to shape the future of this project.
   </footer>
 
-  <!-- Script pour suivre le clic -->
-  <script>
-    document.getElementById('form-click').addEventListener('click', function () {
-      gtag('event', 'conversion', {
-        'send_to': 'AW-1729283029/GQG0CLXqtucaENnM7zvA'
-      });
-    });
-  </script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17292830297">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-17292830297');
+</script>
 </body>
 </html>
